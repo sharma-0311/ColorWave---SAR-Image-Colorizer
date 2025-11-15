@@ -461,36 +461,18 @@ docker-compose up -d
 
 
 <p align="center">
-    Input SAR Image
-  <img src="./Sar_Images/Input/Sar_Image 1.jpg" alt="Image_1" width="200"/>
+    Input SAR Image <br/>
+    <img src="./Sar_Images/Input/Sar_Image 1.jpg" alt="Image_1" width="200"/>
+    <img src="./Sar_Images/Input/Sar_Image 2.jpg" alt="Image_2" width="200"/>
+    <img src="./Sar_Images/Input/Sar_Image 3.jpg" alt="Image_3" width="200"/>
 </p>
 *Original grayscale SAR image input*
 
 <p align="center">
-    Colorized Output
-  <img src="./Sar_Images/Paired_Output/Sar_Image 1.jpg" alt="Image_1" width="200"/>
-</p>
-
-<p align="center">
-    Input SAR Image
-  <img src="./Sar_Images/Input/Sar_Image 2.jpg" alt="Image_2" width="200"/>
-</p>
-*Original grayscale SAR image input*
-
-<p align="center">
-    Colorized Output
-  <img src="./Sar_Images/Paired_Output/Sar_Image 2.jpg" alt="Image_2" width="200"/>
-</p>
-
-<p align="center">
-    Input SAR Image
-  <img src="./Sar_Images/Input/Sar_Image 3.jpg" alt="Image_3" width="200"/>
-</p>
-*Original grayscale SAR image input*
-
-<p align="center">
-    Colorized Output
-  <img src="./Sar_Images/Paired_Output/Sar_Image 3.jpg" alt="Image_3" width="200"/>
+    Colorized Output <br/>
+    <img src="./Sar_Images/Paired_Output/Sar_Image 1.jpg" alt="Image_1" width="200"/>
+    <img src="./Sar_Images/Paired_Output/Sar_Image 2.jpg" alt="Image_2" width="200"/>
+    <img src="./Sar_Images/Paired_Output/Sar_Image 3.jpg" alt="Image_3" width="200"/>
 </p>
 
 *ColorWave colorized output with realistic color mapping*
