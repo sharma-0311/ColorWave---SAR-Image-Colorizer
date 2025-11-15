@@ -1,0 +1,46 @@
+experiment:
+  name: "sar_colorization_gan_v1"
+  description: >
+    Advanced adversarial SAR colorization experiment using MultiBranchGenerator (wavelet+attention)
+    trained on SEN1-2 + MSTAR merged dataset.
+  seed: 42
+  checkpoint_dir: "experiments/checkpoints_adv"
+
+dataset:
+  root: "data/processed"
+  train_sar_dir: "train/SAR"
+  train_opt_dir: "train/Optical"
+  val_sar_dir: "val/SAR"
+  val_opt_dir: "val/Optical"
+  num_workers: 4
+
+model:
+  generator:
+    in_channels: 1
+    out_channels: 3
+  discriminator:
+    in_channels: 4
+
+training:
+  epochs: 120
+  batch_size: 8
+  lr_g: 2.0e-4
+  lr_d: 2.0e-4
+  betas: [0.5, 0.999]
+  lambda_gan: 1.0
+  lambda_l1: 100.0
+  lambda_ssim: 1.0
+  lambda_perc: 0.1
+
+scheduler:
+  type: "StepLR"
+  step_size: 40
+  gamma: 0.5
+
+logging:
+  interval: 20
+  save_best_metric: "val_psnr"
+  log_to_tensorboard: true
+
+evaluation:
+  metrics: ["psnr", "ssim"]
