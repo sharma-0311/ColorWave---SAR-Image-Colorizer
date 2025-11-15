@@ -102,19 +102,19 @@ The project implements multiple deep learning approaches including U-Net archite
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    ColorWave Pipeline                        │
+│                    ColorWave Pipeline                       │
 ├─────────────────────────────────────────────────────────────┤
-│                                                               │
+│                                                             │
 │  Input SAR Image → Preprocessing → Model Inference          │
-│                    ↓                        ↓                │
-│              Normalization          Colorized RGB Output     │
-│              Filtering              ↓                        │
-│              Augmentation      Post-processing               │
-│                                      ↓                        │
-│                                GeoTIFF Export                │
-│                                      ↓                        │
-│                              Evaluation & Metrics            │
-│                                                               │
+│                    ↓                        ↓               │
+│              Normalization          Colorized RGB Output    │
+│              Filtering              ↓                       │
+│              Augmentation      Post-processing              │
+│                                      ↓                      │
+│                                GeoTIFF Export               │
+│                                      ↓                      │
+│                              Evaluation & Metrics           │
+│                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -460,14 +460,11 @@ docker-compose up -d
 
 **Note: Replace these placeholder paths with actual images from your results directory**
 
-![Input SAR Image](experiments/outputs/inference/images/sample_000.png)
+![Input SAR Image](Sar_Images\Input)
 *Original grayscale SAR image input*
 
-![Colorized Output](experiments/outputs/inference/png/sample_000.png)
+![Colorized Output](Sar_Images\Paired_Output)
 *ColorWave colorized output with realistic color mapping*
-
-![Comparison View](experiments/outputs/inference/comparison/sample_000.png)
-*Side-by-side comparison of input and output*
 
 ### Performance Analysis
 
